@@ -9,4 +9,5 @@ const store = createStore({
   actions: {},
 })
 init(store)
+window.store = store
 export default store

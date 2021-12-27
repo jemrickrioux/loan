@@ -22,7 +22,7 @@ func (k msgServer) RequestLoan(goCtx context.Context, msg *types.MsgRequestLoan)
 
 	// TODO: collateral has to be more than the amount (+fee?)
 
-	// moduleAcc := sdk.AccAddress(crypto.AddressHash([]byte(types.ModuleName)))
+	//moduleAcc := sdk.AccAddress(crypto.AddressHash([]byte(types.ModuleName)))
 	// Get the borrower address
 	borrower, _ := sdk.AccAddressFromBech32(msg.Creator)
 

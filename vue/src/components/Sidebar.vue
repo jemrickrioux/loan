@@ -2,10 +2,16 @@
   <SpSidebar v-on:sidebar-open="sidebarOpen = true" v-on:sidebar-close="sidebarOpen = false">
     <template v-slot:default>
       <SpLinkIcon link="/" text="Dashboard" icon="Dashboard" />
-      <SpLinkIcon link="/types" text="Custom Type" icon="Form" />
-      <SpLinkIcon link="/relayers" text="Relayers" icon="Transactions" />
+      <SpLinkIcon link="/request" text="Request a loan" icon="Form" />
+
+      <SpLinkIcon link="/loans" text="Loans" icon="Transactions" />
+      <SpLinkIcon link="/blocks" text="Blocks" icon="Search" />
+
+
+
       <div class="sp-dash"></div>
-      <SpLinkIcon href="https://github.com/tendermint/starport" target="_blank" text="Documentation" icon="Docs" />
+      <SpLinkIcon link="/types" text="Custom Type" icon="Form" />
+
     </template>
     <template v-slot:footer>
       <SpStatusAPI :showText="sidebarOpen" />
